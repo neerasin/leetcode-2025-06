@@ -32,17 +32,17 @@ public class BSTMain {
 
     }
 
-    private static void printLeftOnlyEdgeNodesMain(BinarySerachTree tree){
+    private static void printLeftOnlyEdgeNodesMain(BinarySerachTree tree) {
         System.out.println("printLeftOnlyEdgeNodesMain");
         printLeftOnlyEdgeNodes(tree.getRoot());
     }
 
-    private static  void printLeftOnlyEdgeNodes(Node currentNode){
-
-        if(currentNode.left!=null){
+    private static void printLeftOnlyEdgeNodes(Node currentNode) {
+        if (currentNode.left != null) {
             printLeftOnlyEdgeNodes(currentNode.left);
         }
         System.out.println("currentNode = " + currentNode);
+
     }
 }
 
