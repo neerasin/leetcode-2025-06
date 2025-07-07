@@ -15,7 +15,6 @@ public class BSTMain {
         tree.add(7);
         tree.add(9);
 
-
         System.out.println("6 = " + tree.find(6));
         System.out.println("4 = " + tree.find(4));
         System.out.println("8= " + tree.find(8));
@@ -45,4 +44,3 @@ public class BSTMain {
 
     }
 }
-
