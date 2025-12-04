@@ -15,7 +15,6 @@ public class BSTMain {
         tree.add(7);
         tree.add(9);
 
-
         System.out.println("6 = " + tree.find(6));
         System.out.println("4 = " + tree.find(4));
         System.out.println("8= " + tree.find(8));
@@ -32,17 +31,16 @@ public class BSTMain {
 
     }
 
-    private static void printLeftOnlyEdgeNodesMain(BinarySerachTree tree){
+    private static void printLeftOnlyEdgeNodesMain(BinarySerachTree tree) {
         System.out.println("printLeftOnlyEdgeNodesMain");
         printLeftOnlyEdgeNodes(tree.getRoot());
     }
 
-    private static  void printLeftOnlyEdgeNodes(Node currentNode){
-
-        if(currentNode.left!=null){
+    private static void printLeftOnlyEdgeNodes(Node currentNode) {
+        if (currentNode.left != null) {
             printLeftOnlyEdgeNodes(currentNode.left);
         }
         System.out.println("currentNode = " + currentNode);
+
     }
 }
-
